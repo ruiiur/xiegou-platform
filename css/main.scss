@@ -1,0 +1,75 @@
+$default-font-size: 16px !default;
+html{
+  font-size: $default-font-size;
+}
+body{
+  margin:0;
+  background: #f4f4f4;
+}
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p, th, td, img {
+  margin: 0;
+  padding: 0;
+}
+@function toRem($px){
+  @return ($px/$default-font-size)*1rem;
+}
+.banner{
+  height:toRem(200px);
+  img{
+    height:100%;
+    width:100%
+  }
+}
+.content{
+  >a{
+    background: #fff;
+    display:block;
+    height:toRem(150px);
+    text-decoration: none;
+    >div{
+      display: inline-block;
+      vertical-align: top;
+      >h2{
+        font-size:toRem(18px);
+        color:#333;
+        font-weight: normal;
+        line-height: toRem(18px);
+      }
+      p{
+        width:toRem(70px);
+        height:toRem(24px);
+        color:#fff;
+        font-size: toRem(11px);
+        background: #8D7FDC;
+        border-radius: toRem(12px);
+        line-height: toRem(24px);
+        text-align: center;
+      }
+    }
+    >img{
+      display: inline-block;
+      height:toRem(150px);
+      width:toRem(203px);
+    }
+    &:nth-child(1),&:nth-child(3){
+      >div{
+        margin: toRem(36px) toRem(50px) 0 toRem(38px);
+        >h2{
+          margin-bottom: toRem(21px);
+        }
+      }
+    }
+    &:nth-child(2){
+      margin: toRem(10px) 0;
+      >div,>img{
+        float: right;
+      }
+      >div{
+        margin: toRem(36px) toRem(38px) 0 toRem(75px);
+        >h2{
+          margin-bottom: toRem(21px);
+        }
+      }
+    }
+  }
+}

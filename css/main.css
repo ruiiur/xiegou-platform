@@ -1,0 +1,57 @@
+html {
+  font-size: 16px; }
+
+body {
+  margin: 0;
+  background: #f4f4f4; }
+
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p, th, td, img {
+  margin: 0;
+  padding: 0; }
+
+.banner {
+  height: 12.5rem; }
+  .banner img {
+    height: 100%;
+    width: 100%; }
+
+.content > a {
+  background: #fff;
+  display: block;
+  height: 9.375rem;
+  text-decoration: none; }
+  .content > a > div {
+    display: inline-block;
+    vertical-align: top; }
+    .content > a > div > h2 {
+      font-size: 1.125rem;
+      color: #333;
+      font-weight: normal;
+      line-height: 1.125rem; }
+    .content > a > div p {
+      width: 4.375rem;
+      height: 1.5rem;
+      color: #fff;
+      font-size: 0.6875rem;
+      background: #8D7FDC;
+      border-radius: 0.75rem;
+      line-height: 1.5rem;
+      text-align: center; }
+  .content > a > img {
+    display: inline-block;
+    height: 9.375rem;
+    width: 12.6875rem; }
+  .content > a:nth-child(1) > div, .content > a:nth-child(3) > div {
+    margin: 2.25rem 3.125rem 0 2.375rem; }
+    .content > a:nth-child(1) > div > h2, .content > a:nth-child(3) > div > h2 {
+      margin-bottom: 1.3125rem; }
+  .content > a:nth-child(2) {
+    margin: 0.625rem 0; }
+    .content > a:nth-child(2) > div, .content > a:nth-child(2) > img {
+      float: right; }
+    .content > a:nth-child(2) > div {
+      margin: 2.25rem 2.375rem 0 4.6875rem; }
+      .content > a:nth-child(2) > div > h2 {
+        margin-bottom: 1.3125rem; }
+
+/*# sourceMappingURL=main.css.map */
