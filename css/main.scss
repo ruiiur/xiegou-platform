@@ -37,12 +37,12 @@ body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p,
       }
       p{
         width:toRem(70px);
-        height:toRem(24px);
+        //height:toRem(24px);
         color:#fff;
         font-size: toRem(11px);
-        background: #8D7FDC;
         border-radius: toRem(12px);
-        line-height: toRem(24px);
+        //line-height: toRem(24px);
+        padding: toRem(4px) 0;
         text-align: center;
       }
     }
@@ -59,6 +59,13 @@ body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p,
         }
       }
     }
+    &:nth-child(1){
+      >div{
+        >p{
+          background: #8D7FDC;
+        }
+      }
+    }
     &:nth-child(2){
       margin: toRem(10px) 0;
       >div,>img{
@@ -68,6 +75,16 @@ body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p,
         margin: toRem(36px) toRem(38px) 0 toRem(75px);
         >h2{
           margin-bottom: toRem(21px);
+        }
+        >p{
+          background: #FF6e94;
+        }
+      }
+    }
+    &:nth-child(3){
+      >div{
+        >p{
+          background: #ff7467;
         }
       }
     }
